@@ -1,11 +1,27 @@
 :root {
-    /*COLORS*/
-    --primary-color-black: #000;
-    --primary-color-white: #fff;
-    --secondary-color-blue: #7bafd4;
-    --secondary-color-green: #aed5b2;
-    --secondary-color-yellow: #edff00;
-    /*COLORS OPACITY  (100%  75%  50%  25)  */
-    /*/////*/
+  /*COLORS*/
+  --primary-color-black: #000;
+  --primary-color-white: #fff;
+  --secondary-color-blue: #7bafd4;
+  --secondary-color-green: #aed5b2;
+  --secondary-color-yellow: #edff00;
+  /*COLORS OPACITY  (100%  75%  50%  25)  */
+  /*/////*/
     /*TYPOGRAPHY*/
 }
+
+/* CT - STANDARD CSS SETTINGS CAN BE ADJUSTED */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* NOTES */
+/* 375 x 812 - firefox smallest window */
+/* 500 x 900 - smallest chrome window */
+/* Mobile S - 320w */
