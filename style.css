@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Roboto:ital,wght@0,900;1,900&display=swap");
 :root {
     /*COLORS*/
     --primary-color-black: #000;
@@ -8,6 +9,10 @@
     /*COLORS OPACITY  (100%  75%  50%  25)  */
     /*/////*/
     /*TYPOGRAPHY*/
+    --headers-font: Roboto, sans-serif;
+    --headers-Lspacing: 2rem;
+    --headers-style: uppercase;
+    --text-font: Manrope, sans-serif;
 }
 
 
