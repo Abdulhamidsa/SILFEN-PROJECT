@@ -21,16 +21,8 @@ async function displaybag(userJSON) {
         copy.querySelector(".color2").style.backgroundColor = bags.color2;
         copy.querySelector(".color3").style.backgroundColor = bags.color3;
         copy.querySelector(".color-name1").textContent = bags.colorname1;
-
-        /*   copy.querySelector(".color4").style.backgroundColor = bags.color4;
-                                                                                                                                                                        copy.querySelector(".color5").style.backgroundColor = bags.color5; */
-        /*         console.log(bags._embedded["wp:term"][0][0].name);
-         */
-        /*         copy.querySelector("bike-image").setAttribute();
-         */
         copy.querySelector(".product-img1").src = bags.image1.guid;
         copy.querySelector(".product-img2").src = bags.image2.guid;
-
         const parent = document.querySelector("main");
         parent.appendChild(copy);
     });
