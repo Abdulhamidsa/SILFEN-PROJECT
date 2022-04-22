@@ -5,7 +5,7 @@ function init() {
 }
 async function loadData() {
     const response = await fetch(
-        "http://carolinethostrup.dk/Theme09-Content/Silfen-WP/wp-json/wp/v2/bag?_embed"
+        "https://carolinethostrup.dk/Theme09-Content/Silfen-WP/wp-json/wp/v2/bag?_embed"
     );
     console.log("response2", response);
     const bagData = await response.json();
