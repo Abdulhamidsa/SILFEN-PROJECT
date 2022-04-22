@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <span class="heading">Shop All</span>
         <div class="background-image"></div>
         <div class="slide-content">
             <span>Free Shipping In Danmark</span>
@@ -18,7 +19,7 @@
         </div>
         <div class="navigation">
             <input type="checkbox" class="toggle-menu">
-            <div class="hamburger"></div>
+            <div class="burger"></div>
             <ul class="menu">
                 <li> <a href="">New In</a></li>
                 <li> <a href="">Shop</a>
@@ -99,269 +100,93 @@
     </header>
 
     <main>
-        <div class="all-products">
+        <template id="BagProductTemplate">
             <div class="product">
-
                 <div class="product-content">
                     <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
+                        <img class="product-img1" src="" alt="">
+                        <img class="seconed-image product-img2" src="" alt="">
                     </div>
                     <div class="product-options">
-                        <p class="new">NEW</p>
+                        <p class="new"></p>
                         <div class="colors">
                             <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
+                                <p class="color-name1"></p>
                             </span>
                             <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
+                                <p class="color-name2"></p>
                             </span>
                             <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
+                                <p class="color-name3"></p>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
+                    <h2 class="product-name"></h2>
+                    <p class="product-price"></p>
+                    <button>Add to cart</button>
                 </div>
             </div>
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
-                    </div>
-                    <div class="product-options">
-                        <p class="new">NEW</p>
-                        <div class="colors">
-                            <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
-                            </span>
-                            <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
-                            </span>
-                            <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
-                    </div>
-                    <div class="product-options">
-                        <p class="new">NEW</p>
-                        <div class="colors">
-                            <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
-                            </span>
-                            <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
-                            </span>
-                            <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
-                    </div>
-                    <div class="product-options">
-                        <p class="new">NEW</p>
-                        <div class="colors">
-                            <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
-                            </span>
-                            <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
-                            </span>
-                            <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
-                    </div>
-                    <div class="product-options">
-                        <p class="new">NEW</p>
-                        <div class="colors">
-                            <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
-                            </span>
-                            <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
-                            </span>
-                            <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
-                    </div>
-                    <div class="product-options">
-                        <p class="new">NEW</p>
-                        <div class="colors">
-                            <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
-                            </span>
-                            <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
-                            </span>
-                            <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-content">
-                    <div class="product-media">
-                        <img src="./assets/tempImages-CT/pink-bag.webp" alt="">
-                        <img class="seconed-image" src="./assets/tempImages-CT/516952_PASTE-LILAC_FRONT-600x600.jpg" alt="">
-                    </div>
-                    <div class="product-options">
-                        <p class="new">NEW</p>
-                        <div class="colors">
-                            <span class="color1" tabindex="1">
-                                <p class="color-name1">red</p>
-                            </span>
-                            <span class="color2" tabindex="1">
-                                <p class="color-name2">red</p>
-                            </span>
-                            <span class="color3" tabindex="1">
-                                <p class="color-name3">red</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h2>an amazing bag</h2>
-                    <p class="price">555 kr.</p>
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-        </div>
+        </template>
     </main>
-
-
-
-
-
     <footer>
-      <section>
-        <h4>COME JOIN US, SUBSCRIBE HERE!</h4>
-        <p>
-          We've been waiting for you! Be the first to know about new arrivals,
-          promotional offers and much more.
-        </p>
-
-        <div id="emailCTA">
-          <p>Email address</p>
-          <p>Sign up</p>
-        </div>
-      </section>
-
-      <section>
-        <h4>SILFEN STUDIO</h4>
-        <p>Klareboderne 10, 1. <br />1115 Copenhagen K <br />Denmark</p>
-        <p>Phone: +45 20518923 <br />VAT: DK40912320</p>
-      </section>
-
-      <section>
-        <h4>SILFEN WAREHOUSE</h4>
-        <p>
-          Adax A/S, Att: Silfen Studio <br />Vestre Hedevej 18 <br />DK-4000
-          Roskilde <br />Denmark
-        </p>
-      </section>
-
-      <section>
-        <h4>HELP</h4>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Order Tracking</a></li>
-          <li><a href="#">Currency</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Delivery & returns</a></li>
-          <li><a href="#">Return items</a></li>
-        </ul>
-      </section>
-
-      <section id="copy">
-        <h4>© 2021. SILFEN STUDIO. ALL RIGHTS RESERVED</h4>
-        <div>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy & Cookie Policy</a>
-          <ul id="paymentTypes">
-            <li id="visa" class="payment"></li>
-            <li id="mc" class="payment"></li>
-            <li id="amex" class="payment"></li>
-            <li id="jcb" class="payment"></li>
-            <li id="dk" class="payment"></li>
-            <li id="mp" class="payment"></li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="connect">
-        <h4>CONNECT</h4>
-        <ul id="socials">
-          <li id="fb" class="soMe"></li>
-          <li id="ig" class="soMe"></li>
-          <li id="yt" class="soMe"></li>
-          <li id="email" class="soMe"></li>
-      </section>
+        <section>
+            <h4>COME JOIN US, SUBSCRIBE HERE!</h4>
+            <p>
+                We've been waiting for you! Be the first to know about new arrivals, promotional offers and much more.
+            </p>
+            <div id="emailCTA">
+                <p>Email address</p>
+                <p>Sign up</p>
+            </div>
+        </section>
+        <section>
+            <h4>SILFEN STUDIO</h4>
+            <p>Klareboderne 10, 1. <br />1115 Copenhagen K <br />Denmark</p>
+            <p>Phone: +45 20518923 <br />VAT: DK40912320</p>
+        </section>
+        <section>
+            <h4>SILFEN WAREHOUSE</h4>
+            <p>
+                Adax A/S, Att: Silfen Studio <br />Vestre Hedevej 18 <br />DK-4000 Roskilde <br />Denmark
+            </p>
+        </section>
+        <section>
+            <h4>HELP</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Currency</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery & returns</a></li>
+                <li><a href="#">Return items</a></li>
+            </ul>
+        </section>
+        <section id="copy">
+            <h4>© 2021. SILFEN STUDIO. ALL RIGHTS RESERVED</h4>
+            <div>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy & Cookie Policy</a>
+                <ul id="paymentTypes">
+                    <li id="visa" class="payment"></li>
+                    <li id="mc" class="payment"></li>
+                    <li id="amex" class="payment"></li>
+                    <li id="jcb" class="payment"></li>
+                    <li id="dk" class="payment"></li>
+                    <li id="mp" class="payment"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="connect">
+            <h4>CONNECT</h4>
+            <ul id="socials">
+                <li id="fb" class="soMe"></li>
+                <li id="ig" class="soMe"></li>
+                <li id="yt" class="soMe"></li>
+                <li id="email" class="soMe"></li>
+        </section>
     </footer>
     <script src="productlist.js"></script>
 </body>

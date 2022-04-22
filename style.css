@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Roboto:ital,wght@0,300,400,500,600,700,800,900;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Roboto:ital,wght@0,300,400,500,600,700,800,900;1,900&display=swap");
+ */
+
 :root {
     /*COLORS*/
     --primary-color-black: #000;
@@ -25,9 +27,8 @@
     hyphens: manual;
 }
 
-body {
-    transition: 1s ease;
-}
+
+/*Scroll bar*/
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -45,6 +46,9 @@ body {
     background: rgb(116, 116, 116);
 }
 
+
+/* */
+
 img {
     width: 100%;
     height: auto;
@@ -59,6 +63,16 @@ img {
     background-position: center top;
     transform: matrix(1, 0, 0, 1, 0, 80.4);
     position: absolute;
+}
+
+.heading {
+    position: absolute;
+    color: var(--primary-color-white);
+    font-family: var(--headers-font);
+    font-size: 4rem;
+    top: 50%;
+    left: 2%;
+    z-index: 1;
 }
 
 .slide-content {
@@ -86,6 +100,9 @@ img {
     justify-content: end;
     align-items: center;
 }
+
+
+/*nav Icons*/
 
 nav :nth-child(2),
 nav :nth-child(3),
@@ -120,6 +137,9 @@ nav :nth-child(5) {
     right: 11%;
 }
 
+
+/* */
+
 .logo {
     width: 10.5%;
     position: absolute;
@@ -134,12 +154,10 @@ nav :nth-child(5) {
     top: 5%;
     width: 100%;
     height: 5vh;
-    /*     justify-content: ;
- */
     flex-direction: row;
     align-items: center;
     z-index: 150;
-    background: rgb(255, 255, 255);
+    background: var(--primary-color-white);
     transition: 1s;
     padding: 2rem;
 }
@@ -148,7 +166,7 @@ nav :nth-child(5) {
     position: absolute;
     top: 5%;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--primary-color-white);
     height: 9vh;
     display: flex;
     align-items: center;
@@ -161,16 +179,7 @@ nav :nth-child(5) {
     font-family: "robot", sans-serif;
     transition: 0.3s;
     padding: 0rem 1rem;
-    /*     position: relative;
- */
 }
-
-
-/* 
-.menu li {
-         position: relative;
- 
-} */
 
 .menu li a:hover:before {
     content: "";
@@ -179,7 +188,7 @@ nav :nth-child(5) {
     transition: transform 300ms ease;
     transform-origin: center;
     height: 3px;
-    background-color: #000000;
+    background-color: var(--primary-color-black);
     position: absolute;
     bottom: 0;
 }
@@ -188,36 +197,36 @@ nav :nth-child(5) {
     color: rgb(87, 86, 86);
 }
 
-.hamburger {
+.burger {
     position: absolute;
     top: 10%;
     left: 2%;
     width: 20px;
     height: 0.5px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--primary-color-black);
     border-radius: 10px;
     cursor: pointer;
     z-index: 1060;
     transition: 0.3s;
 }
 
-.hamburger::before,
-.hamburger::after {
+.burger::before,
+.burger::after {
     content: "";
     position: absolute;
     height: 1px;
     right: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--primary-color-black);
     border-radius: 10px;
     transition: 0.3s;
 }
 
-.hamburger::before {
+.burger::before {
     top: -10px;
     width: 25px;
 }
 
-.hamburger::after {
+.burger::after {
     top: 10px;
     width: 25px;
 }
@@ -233,41 +242,52 @@ nav :nth-child(5) {
     opacity: 0;
 }
 
-.hamburger,
+.burger,
 .toggle-menu {
     display: none;
 }
 
-.navigation input:checked~.hamburger {
+.navigation input:checked~.burger {
     background: transparent;
 }
 
-.navigation input:checked~.hamburger::before {
+.navigation input:checked~.burger::before {
     top: 0;
     transform: rotate(45deg);
     width: 25px;
 }
 
-.navigation input:checked~.hamburger::after {
+.navigation input:checked~.burger::after {
     top: 0;
     transform: rotate(-45deg);
     width: 25px;
 }
 
-.all-products {
+main {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
+    box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
     gap: 1.6rem;
     width: 100%;
     z-index: 100;
-    margin-top: 55rem;
+    margin-top: 30rem;
 }
 
 .product {
     width: 45ch;
     position: relative;
-    border: 1px rgb(218, 218, 218) solid;
+    box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+}
+
+.product-name {
+    font-family: var(--text-font);
+    font-size: 1rem;
+}
+
+.product-price {
+    font-family: var(--text-font);
+    font-size: 0.8rem;
 }
 
 .product-media .seconed-image {
@@ -315,22 +335,7 @@ nav :nth-child(5) {
 .color1:focus,
 .color2:focus,
 .color3:focus {
-    border: 1.5px var(--primary-color-black) solid;
-}
-
-.color1 {
-    background-color: #edff00;
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.color2 {
-    background-color: red;
-}
-
-.color3 {
-    background-color: aqua;
+    border: 2px var(--primary-color-black) solid;
 }
 
 .color-name1 {
@@ -343,7 +348,7 @@ nav :nth-child(5) {
 .color3 .color-name3 {
     visibility: hidden;
     width: 60px;
-    background-color: black;
+    background-color: var(--primary-color-black);
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -363,12 +368,6 @@ nav :nth-child(5) {
     left: 50%;
 }
 
-.color1:hover .color-name1,
-.color2:hover .color-name2,
-.color3:hover .color-name3 {
-    visibility: visible;
-}
-
 .product-details {
     display: flex;
     flex-direction: column;
@@ -378,10 +377,13 @@ nav :nth-child(5) {
 
 button {
     background-color: var(--primary-color-white);
+    font-family: var(--text-font);
+    font-size: 0.8rem;
     width: 100%;
     height: 5vh;
     align-self: center;
-    border: 1px solid var(--primary-color-black);
+    letter-spacing: 1px;
+    border: 0.1px solid rgba(0, 0, 0, 0.173);
     cursor: pointer;
 }
 
@@ -520,13 +522,16 @@ footer>ul>li {
         font-size: 0.5rem;
     }
     .background-image {
-        background-image: url(./assets/tempImages-CT/background.webp);
-        width: 100%;
-        height: 60vh;
+        height: 80vh;
         top: -290.137px;
-        background-position: center top;
-        transform: matrix(1, 0, 0, 1, 0, 80.4);
-        position: absolute;
+    }
+    main {
+        margin-top: 17rem;
+    }
+    .heading {
+        z-index: 1000;
+        top: 30%;
+        font-size: 3rem;
     }
 }
 
@@ -561,7 +566,7 @@ footer>ul>li {
 /*Burgermenu*/
 
 @media (min-width: 320px) and (max-width: 1115px) {
-    .hamburger,
+    .burger,
     .toggle-menu {
         display: block;
         position: absolute;

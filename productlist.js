@@ -1,44 +1,37 @@
-// COPIED CODE FROM PREVIOUS PROJECT - BEWARE :)
+window.addEventListener("DOMContentLoaded", init);
 
-const urlParams = new URLSearchParams(window.location.search);
-
-const url = "DATABASE URL GOES HERE";
-
-const products = {
-    headers: {
-        "x-apikey": "API KEY GOES HERE",
-    },
-};
-
-fetch(url, products)
-    .then((res) => res.json())
-    .then((data) => handleProductList(data));
-
-function handleProductList(data) {
-    console.log(data);
-    data.forEach(showProduct);
+function init() {
+    loadData();
 }
+async function loadData() {
+    const response = await fetch(
+        "http://carolinethostrup.dk/Theme09-Content/Silfen-WP/wp-json/wp/v2/bag?per_page=20"
+    );
+    console.log("response2", response);
+    const bagData = await response.json();
+    displaybag(bagData);
+}
+async function displaybag(userJSON) {
+    userJSON.forEach((bags) => {
+        const template = document.querySelector("#BagProductTemplate").content;
+        const copy = template.cloneNode(true);
+        copy.querySelector(".product-name").textContent = bags.title.rendered;
+        copy.querySelector(".product-price").textContent = " DKK " + bags.price;
+        copy.querySelector(".color1").style.backgroundColor = bags.color1;
+        copy.querySelector(".color2").style.backgroundColor = bags.color2;
+        copy.querySelector(".color3").style.backgroundColor = bags.color3;
+        copy.querySelector(".color-name1").textContent = bags.colorname1;
 
-function showProduct(product) {
-    // grab template
-    const template = document.querySelector("template").content;
+        /*   copy.querySelector(".color4").style.backgroundColor = bags.color4;
+                                                                                                                                                                        copy.querySelector(".color5").style.backgroundColor = bags.color5; */
+        /*         console.log(bags._embedded["wp:term"][0][0].name);
+         */
+        /*         copy.querySelector("bike-image").setAttribute();
+         */
+        copy.querySelector(".product-img1").src = bags.image1.guid;
+        copy.querySelector(".product-img2").src = bags.image2.guid;
 
-    // clone template
-    const myClone = template.cloneNode(true);
-
-    // change content
-    myClone.querySelector(".productName").textContent = product.productname;
-    myClone.querySelector(
-        "img"
-    ).src = `http://carolinethostrup.dk/CustomiseMeImages/${product.imageurl}`;
-    myClone.querySelector(".price").textContent = `DKK ${product.price},-`;
-
-    myClone.querySelector("img").alt = `${product.name}`;
-    myClone
-        .querySelector(".productButton")
-        .setAttribute("href", `productPage.html?_id=${product._id}`);
-
-    // select parent & append
-    const parent = document.querySelector("main");
-    parent.appendChild(myClone);
+        const parent = document.querySelector("main");
+        parent.appendChild(copy);
+    });
 }
