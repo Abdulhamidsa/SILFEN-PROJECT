@@ -23,6 +23,7 @@ async function displaybag(userJSON) {
         copy.querySelector(".color-name1").textContent = bags.colorname1;
         copy.querySelector(".product-img1").src = bags.image1.guid;
         copy.querySelector(".product-img2").src = bags.image2.guid;
+        copy.querySelector("a").setAttribute("href", `product.html?id=${bags.id}`);
         const parent = document.querySelector("main");
         parent.appendChild(copy);
     });
