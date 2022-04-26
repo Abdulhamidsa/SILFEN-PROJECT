@@ -462,7 +462,7 @@ button {
 /* PRODUCT-PAGE */
 
 .card-wrapper {
-    max-width: 1500px;
+    max-width: 150ch;
     margin: 10rem auto 10rem;
     box-shadow: -2px 2px 50px -25px rgba(0, 0, 0, 0.3);
 }
