@@ -10,10 +10,10 @@
     /*/////*/
     /*TYPOGRAPHY*/
     --headers-font: Roboto, sans-serif;
-    --headers-Lspacing: 2rem;
+    --headers-Lspacing: 0.3rem;
     --headers-style: uppercase;
     --text-font: Manrope, sans-serif;
-    font-size: 1rem;
+    --font-size: 1rem;
 }
 
 * {
@@ -673,7 +673,7 @@ button {
 
 .sus-main {
     margin-top: 30rem;
-    margin: 30rem 5rem 0 5rem;
+    margin: 35rem 7rem 0 7rem;
 }
 
 .sus-title {
@@ -681,7 +681,7 @@ button {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 7rem;
+    margin: 0 0 4rem;
     font-family: var(--text-font);
     font-size: 1.3rem;
 }
@@ -693,8 +693,8 @@ button {
 .sus-top-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 0rem;
     width: 100%;
 }
 
@@ -707,7 +707,7 @@ button {
 
 .sus-middle-container {
     display: grid;
-    margin-top: 7rem;
+    margin-top: 2rem;
     gap: 1.5rem;
 }
 
@@ -715,7 +715,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    gap: 7rem;
+    gap: 0rem;
 }
 
 .sus-middle-container h2,
@@ -723,7 +723,6 @@ button {
     font-family: var(--headers-font);
     font-size: 1.7rem;
     font-weight: 700;
-    margin-bottom: 2rem;
 }
 
 .sus-goals span {
@@ -749,16 +748,14 @@ button {
     margin-top: 7rem;
 }
 
-.sus-bottom-container h2 {}
-
 .sus-achievement {
     /*     display: flex;
     justify-content: left;
     gap: 4rem; */
     display: grid;
-    justify-content: left;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
-    gap: 7rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 2fr));
+    gap: rem;
     width: 100%;
 }
 
@@ -776,6 +773,7 @@ button {
     width: 100%;
     margin: 0;
     padding: 0;
+    height: auto;
 }
 
 .sus-achievement p {
@@ -785,6 +783,69 @@ button {
     margin: 3rem 0 2rem;
     font-weight: 500;
     font-size: 1.7rem;
+}
+
+.achievment-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievment-info p {
+    width: 40%;
+    font-family: var(--text-font);
+    line-height: 1.5rem;
+}
+
+.sus-reports-container {
+    background-color: #a8d8b6;
+    padding: 1rem 1rem 3rem 4rem;
+    margin: 4rem 0rem 5rem;
+}
+
+.sus-reports-container h2 {
+    color: var(--primary-color-white);
+    font-family: var(--headers-font);
+    letter-spacing: var(--headers-Lspacing);
+    font-weight: 800;
+}
+
+.sus-report {
+    display: flex;
+    justify-content: left;
+    gap: 4rem;
+    position: relative;
+}
+
+.sus-reports {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sus-reports li {
+    color: var(--primary-color-white);
+    font-family: var(--text-font);
+    list-style-type: circle;
+    font-size: 0.9rem;
+}
+
+.sus-reports li::after {
+    content: "\27F6";
+    position: absolute;
+    color: var(--primary-color-white);
+    left: 8%;
+}
+
+.sus-reports a {
+    color: var(--primary-color-white);
+    font-family: var(--text-font);
+    font-size: 0.9rem;
+}
+
+.sus-reports a::after {
+    position: absolute;
+    color: var(--primary-color-white);
+    left: 0;
 }
 
 
