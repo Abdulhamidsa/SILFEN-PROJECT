@@ -851,6 +851,77 @@ button {
 
 /* END OF SUSTAINABILITY PAGE */
 
+
+/* SUSTAINABILITY PAGE - PRODUCT */
+
+.sus-main-product {
+    margin: 13rem 5rem 0 5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 7rem;
+}
+
+.header-content h2 {
+    font-family: var(--headers-font);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.header-content li {
+    list-style-type: decimal-leading-zero;
+    font-family: var(--headers-font);
+    font-size: 1.5rem;
+}
+
+.header-text :nth-child(2),
+.header-text :nth-child(3) {
+    font-size: 1.5rem;
+    font-family: var(--text-font);
+}
+
+.header-content img {
+    width: 25%;
+    height: auto;
+}
+
+.top-container-sus-mat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.top-container-sus-mat>div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.top-container-sus-mat li {
+    font-family: var(--headers-font);
+    color: var(--primary-color-black);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.top-container-sus-mat p {
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    width: ;
+}
+
+.top-container-sus-mat img {
+    width: 30%;
+}
+
+
+/* END OF SUSTAINABILITY PAGE - PRODUCT */
+
 .sub-menu {
     display: flex;
     justify-content: left;
