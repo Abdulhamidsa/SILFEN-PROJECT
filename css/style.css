@@ -1044,7 +1044,7 @@ button {
   display: flex;
   justify-content: left;
   position: absolute;
-  top: 72%;
+  top: 79%;
   width: fit-content;
   background-color: #ffffff;
   box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
