@@ -357,7 +357,6 @@ nav :nth-child(5) {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
-  box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
   gap: 1.6rem;
   width: 100%;
   z-index: 100;
