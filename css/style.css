@@ -844,7 +844,7 @@ button {
   content: "\27F6";
   position: absolute;
   color: var(--primary-color-white);
-  left: 8%;
+  left: 7%;
 }
 
 .sus-reports a {
