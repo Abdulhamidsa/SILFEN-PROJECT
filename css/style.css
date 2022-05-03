@@ -987,7 +987,7 @@ button {
 }
 
 .leather-bag {
-  background-image: url(../assets/tempImages-CT/black-bag.jpg);
+  background-image: url(./assets/tempImages-CT/black-bag.jpg);
   object-fit: cover;
   aspect-ratio: 10/9;
   background-size: 100%;
