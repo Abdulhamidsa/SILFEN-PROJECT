@@ -1101,6 +1101,7 @@ button {
 }
 .sus-people {
   margin-left: 5rem;
+  margin-right: 5rem;
 }
 .sus-people .sus-achievement p {
   font-size: 1.1rem;
@@ -1141,8 +1142,6 @@ button {
   text-align: left;
 }
 .work-condition {
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 .work-condition h2 {
   font-weight: 800;
