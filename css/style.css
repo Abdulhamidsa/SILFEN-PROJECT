@@ -766,7 +766,7 @@ button {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 2fr));
-  gap: rem;
+  gap: 5rem;
   width: 100%;
 }
 
