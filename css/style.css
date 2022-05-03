@@ -969,7 +969,7 @@ button {
 }
 
 .cotton-bag {
-  background-image: url(/assets/tempImages-CT/bug.jpg);
+  background-image: url(../assets/tempImages-CT/bug.jpg);
   object-fit: cover;
   aspect-ratio: 10/9;
   background-size: 100%;
@@ -978,7 +978,7 @@ button {
 }
 
 .vegan-bag {
-  background-image: url(/assets/tempImages-CT/516910_GREEN\ ASH_FRONT.JPG);
+  background-image: url(../assets/tempImages-CT/516910_GREEN\ ASH_FRONT.JPG);
   object-fit: cover;
   aspect-ratio: 10/9;
   background-size: 100%;
@@ -987,7 +987,7 @@ button {
 }
 
 .leather-bag {
-  background-image: url(/assets/tempImages-CT/black-bag.jpg);
+  background-image: url(../assets/tempImages-CT/black-bag.jpg);
   object-fit: cover;
   aspect-ratio: 10/9;
   background-size: 100%;
@@ -996,7 +996,7 @@ button {
 }
 
 .rpet-bag {
-  background-image: url(/assets/tempImages-CT/line-bag.jpg);
+  background-image: url(../assets/tempImages-CT/line-bag.jpg);
   object-fit: cover;
   aspect-ratio: 10/9;
   background-size: 100%;
@@ -1150,7 +1150,7 @@ button {
   font-family: var(--headers-font);
 }
 .map-image {
-  background-image: url(/assets/tempImages-CT/map.svg);
+  background-image: url(../assets/tempImages-CT/map.svg);
   object-fit: cover;
   width: 60%;
   aspect-ratio: 22/15;
